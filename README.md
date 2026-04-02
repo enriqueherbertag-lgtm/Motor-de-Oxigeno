@@ -1,5 +1,7 @@
 # Motor de Oxígeno
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+
 Sistema de propulsión que extrae oxígeno del aire ambiente, lo concentra y lo quema con combustible en una turbina, generando energía mecánica sin emisiones de NOx. Diseñado para operar en atmósferas convencionales, entornos pobres en oxígeno (alta montaña, submarinos) o incluso en Marte, integrado con torres ShieldAir.
 
 ## ¿Qué es?
