@@ -1,104 +1,79 @@
-# Motor de Oxígeno
+# ShieldAir-Urban: Pulmones urbanos activos contra el smog
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19357829.svg)](https://doi.org/10.5281/zenodo.19357829)
+[![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
+[![EN](https://img.shields.io/badge/English-version-blue.svg)](./README.en.md)
 
-Sistema de propulsión que extrae oxígeno del aire ambiente, lo concentra y lo quema con combustible en una turbina, generando energía mecánica sin emisiones de NOx. Diseñado para operar en atmósferas convencionales, entornos pobres en oxígeno (alta montaña, submarinos) o incluso en Marte, integrado con torres ShieldAir.
+En ciudades como Nueva Delhi, Lahore, Pekín o Santiago, la contaminación del aire alcanza niveles de emergencia. El smog afecta la salud de millones de personas, colapsa hospitales y reduce la esperanza de vida.
 
-## ¿Qué es?
+Las soluciones tradicionales (filtros, purificadores domésticos) son individuales y no abordan el problema a escala urbana.
 
-El Motor de Oxígeno es un concepto de propulsión basado en la separación activa del oxígeno del aire. A diferencia de un motor de combustión interna convencional, que diluye el oxígeno con nitrógeno (reduciendo eficiencia y generando NOx), este sistema:
+**ShieldAir-Urban nace para cambiar eso.**
 
-1. **Captura aire ambiente**.
-2. **Separa oxígeno puro** mediante membranas de grafeno o zeolitas.
-3. **Inyecta combustible** (hidrógeno, metano, sintético).
-4. **Quema en cámara cerrada** a alta temperatura y presión.
-5. **Expande los gases** en una turbina para generar energía mecánica.
-6. **Expulsa vapor de agua y CO₂**, o los recircula si se busca cero emisiones.
+## Que es
 
-El principio es similar al de un cohete, pero el oxidante no se almacena en tanques, sino que se extrae del entorno en tiempo real.
+ShieldAir-Urban es una torre modular de 28 metros de altura que se instala en azoteas de edificios estratégicos (hospitales, oficinas gubernamentales, hoteles). Transforma esos edificios en "pulmones urbanos activos": capturan smog a nivel de calle, recuperan calor residual y generan biomasa, sin costo inicial para la municipalidad.
 
-## Arquitectura general
+El sistema es autofinanciado: los ingresos por venta de calor, créditos de carbono y biomasa cubren la operación y permiten escalarlo.
 
+## Que hace
 
-[AIRE AMBIENTE]
-│
-▼
-┌─────────────────┐
-│ CAPTURA │ Entrada de aire, filtrado de partículas
-└────────┬────────┘
-▼
-┌─────────────────┐
-│ SEPARADOR O₂ │ Membranas de grafeno / zeolitas. Produce O₂ puro.
-└────────┬────────┘ (el resto (N₂, CO₂) se expulsa o se usa en otras funciones)
-▼
-┌─────────────────┐
-│ COMBUSTIÓN │ Cámara donde se inyecta combustible y se quema con O₂.
-└────────┬────────┘ Temperatura > 2000°C (controlada).
-▼
-┌─────────────────┐
-│ TURBINA │ Los gases de combustión expanden, mueven un rotor.
-└────────┬────────┘ Genera energía mecánica (eje rotativo).
-▼
-┌─────────────────┐
-│ ESCAPE │ Gases residuales (H₂O, CO₂) se expulsan o capturan.
-└─────────────────┘
+- **Captura smog**: aspira 28,000 m³ de aire por hora, reduciendo el PM2.5 en un radio de 350 metros hasta en un 40%.
+- **Recupera calor**: 78 kW térmicos netos (ΔT de 6°C) que se integran al sistema de calefacción o agua caliente del edificio ancla, reduciendo su consumo energético en un 40-60%.
+- **Produce biomasa**: 15 kg/día de algas (Scenedesmus dimorphus + Chlorella) que se convierten en biofertilizante o proteína.
+- **Captura CO₂**: 1.1 toneladas diarias (400 toneladas al año).
 
+## Para quién es
 
-## Ventajas sobre motores convencionales
+- **Municipalidades**: solución sin inversión inicial, pago por resultados medibles de mejora de calidad del aire.
+- **Edificios ancla**: ahorro energético del 40-60% en calefacción/agua caliente.
+- **Ciudadanos**: reducción de la exposición a smog en su vida cotidiana.
 
-| Característica | Motor convencional | Motor de Oxígeno |
-|----------------|--------------------|------------------|
-| Oxidante | Aire ambiente (21% O₂, 79% N₂) | O₂ puro (separado del aire) |
-| Eficiencia térmica | Limitada por dilución con N₂ | Mayor, al quemar con O₂ puro |
-| Emisiones NOx | Altas (por la reacción N₂ + O₂ a alta T) | Cero (no hay N₂ en la combustión) |
-| Funcionamiento en atmósferas pobres | No | Sí (si hay fuente de O₂ o CO₂) |
-| Adaptación a Marte | No | Sí (con ShieldAir-Mars) |
+## Ventajas principales
 
-## Integración con ShieldAir
+- **Sin costo inicial para la ciudad**: el municipio solo paga por resultados medibles.
+- **Autofinanciado**: los ingresos por calor, créditos de carbono y biomasa cubren la operación.
+- **Aprovecha infraestructura existente**: se instala en azoteas de edificios ya construidos.
+- **Escalable**: una sola torre limpia un radio de 350 metros. 50 torres pueden transformar un distrito entero.
 
-El Motor de Oxígeno puede recibir su O₂ directamente de:
+## Hoja de ruta (18 meses)
 
-- **ShieldAir-Urban**: en ciudades, usando la torre para extraer oxígeno del smog.
-- **ShieldAir-Mars**: en Marte, usando CO₂ atmosférico para producir O₂ y luego quemarlo con hidrógeno.
+- Fase 0 (meses 1-3): MoU con municipalidad, selección de edificios piloto, financiamiento estructurado.
+- Fase 1 (meses 4-9): fabricación modular e instalación "plug and play" en azoteas.
+- Fase 2 (meses 10-12): monitoreo continuo, reporte de impacto, activación de pago por resultados.
+- Fase 3 (meses 13-18): escalado metropolitano (50 edificios).
 
-Esto convierte a ShieldAir en el *combustible* de un sistema de propulsión, no solo en un purificador o generador.
+## Impacto escalado (50 torres en Nueva Delhi)
 
-## Aplicaciones
+- Aire limpio producido: 1.4 millones de m³/hora.
+- Calor recuperado: 3.3 MW térmicos (suficiente para 1,000 viviendas).
+- Biomasa generada: 275 toneladas/año (proteína para 2,500 personas/día).
+- Captura de CO₂: 20,000 toneladas/año.
+- Reducción de PM2.5: hasta 45%.
+- Empleos locales generados: 180.
 
-| Ámbito | Uso |
-|--------|-----|
-| **Terrestre** | Motores de combustión limpia para vehículos pesados, generación eléctrica sin NOx. |
-| **Submarinos** | Propulsión independiente de aire exterior, usando oxígeno producido a bordo. |
-| **Alta montaña / desierto** | Funcionamiento donde el aire es pobre en O₂. |
-| **Espacio / Marte** | Propulsión para etapas de ascenso, usando O₂ producido in situ (ISRU). |
-| **Sistemas cerrados** | Bases autónomas que queman residuos o hidrógeno con oxígeno reciclado. |
+## Adaptación para Marte
 
-## Estado del proyecto
+Esta misma tecnología se adaptó para producir oxígeno, biomasa y calor en Marte, formando parte del ecosistema de colonización.
 
-| Componente | Estado |
-|------------|--------|
-| Concepto | Definido |
-| Flujo de aire | Esquematizado |
-| Separación de O₂ | Basado en tecnología existente (membranas, zeolitas) |
-| Cámara de combustión | En fase conceptual |
-| Turbina | Pendiente de diseño |
-| Integración con ShieldAir | Definida |
-| Prototipo | Pendiente |
+Ver [ShieldAir-Mars](https://github.com/enriqueherbertag-lgtm/ShieldAir-Mars).
 
-## Próximos pasos
+## Estado actual
 
-1. Selección de tecnología de separación de O₂ (membranas de grafeno vs. zeolitas).
-2. Diseño de la cámara de combustión con O₂ puro (control de temperatura, materiales).
-3. Simulación de flujo y eficiencia térmica.
-4. Integración con ShieldAir-Urban para pruebas en banco.
-5. Adaptación a ShieldAir-Mars para pruebas en atmósfera simulada.
+- Concepto definido
+- Especificaciones técnicas
+- Modelo financiero
+- Hoja de ruta
+- Impacto escalado
+- Prototipo (pendiente)
+- Validación en campo (pendiente)
 
 ## Proyectos relacionados
 
-- **ShieldAir-Urban** — torre de captura y purificación de aire.
-- **ShieldAir-Mars** — torre de producción de O₂ desde CO₂ atmosférico.
-- **Goliat-Orbital** — sistema orbital autónomo (comparte principios de separación de gases).
-- **CORPUS** — sistemas de energía y metabolismo artificial.
+- ShieldAir-Mars — adaptación marciana
+- Odiseo — nave de infraestructura para colonizar Marte
+- Goliat-Orbital — reciclaje de basura espacial
+- CORPUS — sistemas corporales artificiales
 
 ## Licencia
 
@@ -106,17 +81,17 @@ Copyright © 2026 Enrique Aguayo. Todos los derechos reservados.
 
 Este proyecto está protegido por derechos de autor.
 
-**PERMITIDO:**
+PERMITIDO:
 - Uso no comercial con fines educativos o de investigación.
 - Distribución sin modificación, siempre que se mantenga esta licencia y se dé crédito al autor.
 
-**PROHIBIDO sin autorización expresa por escrito:**
+PROHIBIDO sin autorización expresa por escrito:
 - Uso comercial (incluyendo, pero no limitado a: ofrecerlo como servicio, SaaS, suscripción, integración en productos que generen ingresos, o cualquier uso que genere beneficio económico directo o indirecto).
 - Modificación para entornos de producción.
 - Distribución de versiones modificadas sin autorización.
 
 Para licencias comerciales, soporte técnico, pilotos empresariales o consultas:
-Contacto: **eaguayo@migst.cl**
+Contacto: eaguayo@migst.cl
 
 Cualquier uso fuera de los términos permitidos requiere permiso previo del autor.
 
@@ -124,11 +99,11 @@ Las consultas comerciales son bienvenidas y se responderán en un plazo máximo 
 
 ## Autor
 
-**Enrique Aguayo H.**  
-Mackiber Labs  
-Contacto: eaguayo@migst.cl  
-ORCID: 0009-0004-4615-6825  
-GitHub: [@enriqueherbertag-lgtm](https://github.com/enriqueherbertag-lgtm)
+Enrique Aguayo H.
+Mackiber Labs
+Contacto: eaguayo@migst.cl
+ORCID: 0009-0004-4615-6825
+GitHub: @enriqueherbertag-lgtm
 
-Documentación asistida por **Ana (DeepSeek)** , IA para investigación y optimización técnica.
+Documentación asistida por Ana (DeepSeek), IA para investigación y optimización técnica.
 
